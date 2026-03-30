@@ -1,0 +1,25 @@
+# ML
+scikit-learn>=1.4
+xgboost
+lightgbm
+joblib
+
+# NLP
+nltk
+spacy
+
+# Email parsing
+mail-parser
+beautifulsoup4
+
+# Data
+pandas
+numpy
+
+# Backend / UI
+fastapi
+uvicorn
+gradio
+
+# Testing
+pytest

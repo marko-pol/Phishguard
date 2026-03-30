@@ -1,0 +1,22 @@
+# Datasets
+data/raw/*
+data/processed/*
+data/splits/*
+!data/**/.gitkeep
+
+# Model artifacts
+src/models/artifacts/*
+!src/models/artifacts/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
