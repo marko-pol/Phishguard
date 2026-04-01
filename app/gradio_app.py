@@ -551,7 +551,7 @@ def run_analysis(text_input: str | None) -> tuple:
     else:
         return (
             gr.update(value=""),
-            gr.update(value="⚠ Please paste an email first."),
+            gr.update(value="Error: Please paste an email first."),
         )
 
     # Run model
@@ -617,7 +617,7 @@ def build_ui() -> gr.Blocks:
         <div id="pg-header">
             <span class="shield">🛡</span>
             <h1>PhishGuard</h1>
-            <p>Paste an email below — the AI will flag phishing attempts in seconds</p>
+            <p>Paste an email below and the AI will flag phishing attempts in seconds</p>
         </div>
         """)
 
@@ -678,13 +678,13 @@ def build_ui() -> gr.Blocks:
 
         with gr.Row():
             ex_phish_btn = gr.Button(
-                "⚠  Load phishing example",
+                "Load phishing example",
                 size="sm",
                 variant="secondary",
                 elem_id="ex-phish-btn",
             )
             ex_ham_btn = gr.Button(
-                "✓  Load safe example",
+                "Load safe example",
                 size="sm",
                 variant="secondary",
                 elem_id="ex-ham-btn",
@@ -696,6 +696,7 @@ def build_ui() -> gr.Blocks:
             fn=run_analysis,
             inputs=[text_input],
             outputs=[result_card, status_msg],
+            show_progress="hidden",
         )
 
         clear_btn.click(
