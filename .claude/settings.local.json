@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/pip list:*)",
+      "WebSearch",
+      "Bash(python3 -m ensurepip --upgrade)",
+      "Bash(/home/markus/Documents/phishguard/.venv/bin/python3 -m ensurepip --upgrade)",
+      "WebFetch(domain:aclweb.org)"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wget -q --show-progress -O /home/markus/Documents/phishguard/data/raw/FRAUD.gz https://aclweb.org/aclwiki/code/9/96/FRAUD.gz)",
+      "Bash(.venv/bin/python -c \":*)",
+      "Bash(.venv/bin/python -c \"from app.gradio_app import build_ui\")",
+      "Bash(ps -p 131448 -o pid,cmd)",
+      "Bash(python3 -c \":*)",
+      "Bash(find /home/markus/Documents/phishguard/.venv/lib/python3.12/site-packages/ -name CHANGELOG* -path *gradio*)",
+      "Bash(timeout 15:*)",
+      "Bash(.venv/bin/python -m pytest tests/ -v)"
+    ]
+  }
+}
