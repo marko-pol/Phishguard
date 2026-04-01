@@ -11,7 +11,7 @@ pinned: false
 
 # PhishGuard
 
-A zero-budget, open-source phishing email classifier powered by traditional ML (scikit-learn + XGBoost). Paste an email and get an instant verdict, confidence score, and plain-English explanation of the red flags detected.
+A zero-budget, open-source phishing email classifier powered by traditional ML (scikit-learn + XGBoost). Paste an email and get an instant test result, confidence score, and plain-English explanation of the red flags detected.
 
 **Live demo**: [PhishGuard on Hugging Face Spaces](https://huggingface.co/spaces/markopolo845/phishguard)
 
@@ -20,7 +20,7 @@ A zero-budget, open-source phishing email classifier powered by traditional ML (
 ## What it does
 
 - Classifies emails as **phishing** or **safe** with a confidence score
-- Highlights red flags — suspicious URLs, urgent language, spoofed senders, and more
+- Highlights red flags such as suspicious URLs, urgent language, spoofed senders, and more
 - Shows a signal breakdown so you can understand *why* the model flagged it
 
 ---
